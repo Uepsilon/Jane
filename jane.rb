@@ -37,7 +37,7 @@ end
 	#actions
 		 get '/action_power_all' do
 		 	`irsend SEND_ONCE tv KEY_POWER`
-		   	sleep(1)
+		   	sleep(2)
 		 	`irsend SEND_ONCE avr KEY_POWER` 
 		 end
 #since actions might controll more than ist one device, the naming pattern is a bit different
