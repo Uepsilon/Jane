@@ -19,12 +19,22 @@ end
 		 get '/avr_power' do
 		 	`irsend SEND_ONCE avr KEY_POWER`
 		 end
+	#htpc commands
 
+		#Reboot
+		get '/htpc_reboot' do
+			`ruby reboot.rb`
+		end
+
+		#Shutdown
+		get '/htpc_shutdown' do
+			`ruby shutdown.rb`
+		end
 #the pattern is: '/<devicename>_<function>_<functionparameter>' => ie. 'avr_channel_hdmi1'
 
 #but those are just single commands, lets get a bit more fancy
 #you can tell jane to execute a bunch of commands on one http get, we call those *actions*
-	actions
+	#actions
 		 get '/action_power_all' do
 		 	`irsend SEND_ONCE tv KEY_POWER`
 		   	sleep(1)

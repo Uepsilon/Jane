@@ -9,6 +9,7 @@ PASSWORD = 'xbmc'
       commands = [
         "sudo /sbin/reboot"
       ]
+# replace password with key and add key_file_path for ssh-key authentication
 
       Net::SSH.start(HOST, USER, :password => PASSWORD) do |ssh|
         ssh.open_channel do |channel|
