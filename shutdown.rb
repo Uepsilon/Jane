@@ -7,7 +7,7 @@ USER = 'xbmc'
 PASSWORD = 'xbmc'
 
       commands = [
-        "sudo /sbin/shutdown"
+        "sudo /sbin/shutdown now"
       ]
 # replace password with key and add key_file_path for ssh-key authentication
 
