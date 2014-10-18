@@ -11,6 +11,26 @@ end
 
 #Time for your code!
 #we recommand to categorize your devices like:
+	# Socket commands
+	
+	# Neon on
+		get '/neon_on' do
+        		`ruby neon_on.rb`
+		end
+	#Neon off
+		get '/neon_off' do
+			`ruby neon.off.rb`
+		end
+	#LED on
+		get '/led_on' do
+			`ruby led_on.rb`
+		end
+	#LED off
+		get '/led_off' do
+			`ruby led_off.rb`
+		end	
+		
+
 	#tv commands
 		 get '/tv_power' do
 		 	`irsend SEND_ONCE tv KEY_POWER` #system call to execute the command
@@ -42,3 +62,4 @@ end
 		 end
 #since actions might controll more than ist one device, the naming pattern is a bit different
 #pattern: '/action_<actionname>_<actionparameter>' => ie. 'action_watch_dvd'
+
