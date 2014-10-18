@@ -19,7 +19,7 @@ end
 		end
 	#Neon off
 		get '/neon_off' do
-			`ruby neon.off.rb`
+			`ruby neon_off.rb`
 		end
 	#LED on
 		get '/led_on' do
