@@ -27,6 +27,9 @@ if useSunsetFunction
 	scheduler.at sunsettime.sunset do
 		#check if you are home (ping your smartphone)
 		#command to turn lights on here
+		get '/led_on' do
+			`ruby led_off.rb` 
+		end
 	end
 end
 

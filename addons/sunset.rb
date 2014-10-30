@@ -5,7 +5,7 @@ require 'sun-times'
 
 class Sunset
 	def initialize(city)
-		@city = city
+		@city = "Bonn"
 		@sunset = sunsetcalc(city)
 	end
 	attr_reader :sunset
