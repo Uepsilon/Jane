@@ -5,7 +5,7 @@ include Net
 
 Ping::TCP.service_check = true
 
-hosts = ['192.168.2.109', '192.168.2.5']
+hosts = ['192.168.2.109', '192.168.2.86']
 threads = []
 ping_objects = []
 
