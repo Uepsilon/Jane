@@ -28,7 +28,7 @@ if useSunsetFunction
 		#check if you are home (ping your smartphone)
 		#command to turn lights on here
 		get '/led_on' do
-			`ruby led_off.rb` 
+			`ruby led_on.rb` 
 		end
 	end
 end
@@ -67,12 +67,12 @@ end
 
 		#Reboot
 		get '/htpc_reboot' do
-			`ruby reboot.rb`
+			`ruby addons/reboot.rb`
 		end
 
 		#Shutdown
 		get '/htpc_shutdown' do
-			`ruby shutdown.rb`
+			`ruby addons/shutdown.rb`
 		end
 #the pattern is: '/<devicename>_<function>_<functionparameter>' => ie. 'avr_channel_hdmi1'
 
