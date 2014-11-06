@@ -67,13 +67,13 @@ end
 
 		#Reboot
 		get '/htpc_reboot' do
-			`ruby addons/reboot.rb`
+			`ruby ./addons/reboot.rb`
 		end
 
 		#Shutdown
-		get '/htpc_shutdown' do
-			`ruby addons/shutdown.rb`
-		end
+		# get '/htpc_shutdown' do
+		# 	`ruby addons/shutdown.rb`
+		# end
 #the pattern is: '/<devicename>_<function>_<functionparameter>' => ie. 'avr_channel_hdmi1'
 
 #but those are just single commands, lets get a bit more fancy
