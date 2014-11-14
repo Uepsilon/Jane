@@ -19,9 +19,9 @@
 			}
 		</style>
 	</head>
-	<header class="cbp-spmenu-push">
+	<header>
 	<core-toolbar>
-		<core-menu-button id="showLeft">
+		<core-menu-button>
 		    <core-icon-button icon="menu"></core-icon-button>
 		</core-menu-button>
 	    <span flex class="title">Jane</span>
@@ -30,12 +30,9 @@
   	</core-toolbar>
 	</header>
 	<body>
-	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-    <h3 class="hideLeft">Menu</h3>
-		<ul class="menuLinks">
-		<a href=""><li>TestCategorie 1</li></a>
-		<a href=""><li>TestCategorie 2</li></a>
-		</ul>
+	<nav>
+		<ul>TestCategorie 1</ul>
+		<ul>TestCategorie 2</ul>
 	</nav>
 			<div class="background">
 				<div class="arroundCategorie">
@@ -48,18 +45,4 @@
 				</div>
 			</div>
 	</body>
-	<script src="js/classie.js"></script>
-	<script>
-	var menuLeft = document.getElementById( 'cbp-spmenu-s1' );
-	var showLeft = document.getElementById( 'showLeft' );
-	showLeft.onclick = function() {
-    classie.toggle( this, 'active' );
-    classie.toggle( menuLeft, 'cbp-spmenu-open' );
-    disableOther( 'showLeft' );
-	};
-	$('html').click(function() {
-  	//Hide the menus if visible
-  	classie.toggle(this, 'none')
-	});
-	</script>
 </html>
