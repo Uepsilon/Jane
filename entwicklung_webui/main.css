@@ -4,9 +4,10 @@ header {
   margin: 0;
   padding: 0;
   text-align: left;
-  -moz-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+	z-index: 10;
 }
 
 body {
@@ -205,9 +206,10 @@ core-item{
 .cbp-spmenu-left.cbp-spmenu-open {
     left: 0px;
     margin-top: 64px;
-    -moz-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	z-index: 2;
 }
  
 .cbp-spmenu-right.cbp-spmenu-open {
@@ -280,9 +282,10 @@ core-item{
 .cbp-spmenu-top.cbp-spmenu-open {
 	top: 0px;  
     margin-top: 64px;
-    -moz-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 3px 4px 3px rgba(0, 0, 0, 0.4);
+	z-index: 2;
 }
  
 .cbp-spmenu-bottom.cbp-spmenu-open {
