@@ -4,7 +4,9 @@ header {
   margin: 0;
   padding: 0;
   text-align: left;
-  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px inset;
+  -moz-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -45,7 +47,10 @@ paper-button[raised].colored {
 }
 
 core-toolbar {
-	 background: #3f51b5;
+	background: #3f51b5;
+	-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
 }
 
 .backgroundButton{
@@ -200,6 +205,9 @@ core-item{
 .cbp-spmenu-left.cbp-spmenu-open {
     left: 0px;
     margin-top: 64px;
+    -moz-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
 }
  
 .cbp-spmenu-right.cbp-spmenu-open {
@@ -237,7 +245,9 @@ core-item{
 .menuLinks{
 	list-style-type: none;
 	text-decoration: none;
+	text-align: left;
 }
+
  
 .cbp-spmenu a {
     display: block;
@@ -256,6 +266,28 @@ core-item{
     color: #47a3da;
     text-decoration: none;
 }
+
+/* Horizontal menu that slides from the top or bottom */
+ 
+.cbp-spmenu-top {
+    top: -150px;
+}
+ 
+.cbp-spmenu-bottom {
+    bottom: -150px;
+}
+ 
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;  
+    margin-top: 64px;
+    -moz-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.5);
+}
+ 
+.cbp-spmenu-bottom.cbp-spmenu-open {
+    bottom: 0px;
+}
  
 /* Orientation-dependent styles for the content of the menu */
  
@@ -270,6 +302,28 @@ core-item{
 .cbp-spmenu-vertical a {
     border-bottom: none;
     padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+
+    width: 100%;
+    height: 150px;
+    left: 80%;
+    z-index: 1000;
+    overflow: hidden;
+}
+ 
+.cbp-spmenu-horizontal h3 {
+    height: 100%;
+    width: 20%;
+    
+}
+ 
+.cbp-spmenu-horizontal a {
+    
+    width: 20%;
+    padding: 0.8em;
+    border: none;
 }
 
 /*Vertical Menu Slides from left to right */
