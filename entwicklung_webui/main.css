@@ -4,6 +4,7 @@ header {
   margin: 0;
   padding: 0;
   text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 1px inset;
 }
 
 body {
@@ -41,10 +42,6 @@ paper-button[raised].colored {
   margin: 0.25em;
   float: center;
   min-width:5%;
-}
-
-core-header-panel {
-  background: white;
 }
 
 core-toolbar {
@@ -109,19 +106,6 @@ text-shadow: rgb(81, 58, 51) 4px 4px 0px;
 
 core-menu-button {
 	background: #3f51b5;
-}
-
-core-dropdown:(.core-opened){
-	background-color: #3f51b5;
-}
-
-.color:actve, .dropdown.color.core-trainsition.core-opened {
-	border: 1px solid #0f9d58;
-    background-color: #b7e1cd;
-}
-
-.color {
-color: #0f9d58;
 }
 
 core-item{
@@ -215,6 +199,7 @@ core-item{
  
 .cbp-spmenu-left.cbp-spmenu-open {
     left: 0px;
+    margin-top: 64px;
 }
  
 .cbp-spmenu-right.cbp-spmenu-open {
@@ -222,7 +207,7 @@ core-item{
 }
 
 .cbp-spmenu {
-    background: #47a3da;
+    background: #fff;
     position: fixed;
 }
  
@@ -232,7 +217,7 @@ core-item{
     padding: 20px;
     margin: 0;
     font-weight: 300;
-    background: #0d77b6;
+    background: #fff;
 }
 
 .cbp-spmenu-push {
@@ -256,14 +241,14 @@ core-item{
  
 .cbp-spmenu a {
     display: block;
-    color: #fff;
+    color: #424242;
     font-size: 1.1em;
     font-weight: 300;
     text-decoration: none;
 }
  
 .cbp-spmenu a:hover {
-    background: #258ecd;
+    background: #E0E0E0;
 }
  
 .cbp-spmenu a:active {
@@ -275,6 +260,7 @@ core-item{
 /* Orientation-dependent styles for the content of the menu */
  
 .cbp-spmenu-vertical {
+	margin-top: 64px;   
     width: 240px;
     height: 100%;
     top: 0;
@@ -282,7 +268,7 @@ core-item{
 }
  
 .cbp-spmenu-vertical a {
-    border-bottom: 1px solid #258ecd;
+    border-bottom: none;
     padding: 1em;
 }
 

@@ -25,16 +25,23 @@
 		    <core-icon-button icon="menu"></core-icon-button>
 		</core-menu-button>
 	    <span flex class="title">Jane</span>
-	    <paper-icon-button icon="refresh"></paper-icon-button>
+	    <paper-icon-button icon="refresh" onClick="window.location.reload()"></paper-icon-button>
+	    <core-menu-button id="showRight">
 	    <paper-icon-button icon="more-vert"></paper-icon-button>
+	    </core-menu-button>
   	</core-toolbar>
 	</header>
 	<body>
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-    <h3 class="hideLeft">Menu</h3>
 		<ul class="menuLinks">
 		<a href=""><li>TestCategorie 1</li></a>
 		<a href=""><li>TestCategorie 2</li></a>
+		</ul>
+	</nav>
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+		<ul class="menuLinks">
+		<a href=""><li>Add Button</li></a>
+		<a href=""><li>Add Something Else</li></a>
 		</ul>
 	</nav>
 			<div class="background">
@@ -51,15 +58,18 @@
 	<script src="js/classie.js"></script>
 	<script>
 	var menuLeft = document.getElementById( 'cbp-spmenu-s1' );
+	var menuRight = menuRight = document.getElementById( 'cbp-spmenu-s2' );
 	var showLeft = document.getElementById( 'showLeft' );
+	var showRight = document.getElementById('showRight');
 	showLeft.onclick = function() {
     classie.toggle( this, 'active' );
     classie.toggle( menuLeft, 'cbp-spmenu-open' );
     disableOther( 'showLeft' );
 	};
-	$('html').click(function() {
-  	//Hide the menus if visible
-  	classie.toggle(this, 'none')
-	});
+	showRight.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( menuRight, 'cbp-spmenu-open' );
+    disableOther( 'showRight' );
+	};
 	</script>
 </html>
