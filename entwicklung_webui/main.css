@@ -4,9 +4,9 @@ header {
   margin: 0;
   padding: 0;
   text-align: left;
-  -moz-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
 	z-index: 10;
 }
 
@@ -206,9 +206,9 @@ core-item{
 .cbp-spmenu-left.cbp-spmenu-open {
     left: 0px;
     margin-top: 64px;
-    -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
 	z-index: 2;
 }
 
@@ -280,9 +280,9 @@ core-item{
 .cbp-spmenu-top.cbp-spmenu-open {
 	top: 0px;  
     margin-top: 64px;
-    -moz-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.4);
-	box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
 	z-index: 2;
 }
  
