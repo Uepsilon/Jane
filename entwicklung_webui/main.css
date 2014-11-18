@@ -4,9 +4,9 @@ header {
   margin: 0;
   padding: 0;
   text-align: left;
-  -moz-box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
-	-webkit-box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
-	box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.16);
 	z-index: 10;
 }
 
@@ -119,6 +119,15 @@ core-item{
 	vertaical-align: center;
 }
 
+#showRight {
+	height: 40px;
+	width: 40px;
+}
+#showLeft {
+	height: 40px;
+	width: 40px;
+}
+
 @media (max-width: 320px) {
 	.backgroundButton{
 		min-height: 20px;
@@ -193,6 +202,38 @@ core-item{
 
 }
 
+.myCard{
+	background-color: green;
+	width: 20%;
+	float:left;
+	 -moz-box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
+	z-index: 5;
+	border-radius: 2px;
+	margin: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*---------------- Musss noch korrigiert werden--------------------
+#icon {
+	position:relative;
+	marign-right:80%;
+	height: 80%;
+}
+
+#button {
+	margin-left: 20%;
+	position:relative;
+	hieght:80%;
+}
+
+#titel {
+	height:20%;
+	margin-bottom: 80%; 
+	position:relative;
+}
+*/
 /* --------------Navigation--------------------------*/
  
 .cbp-spmenu-left {
@@ -206,9 +247,9 @@ core-item{
 .cbp-spmenu-left.cbp-spmenu-open {
     left: 0px;
     margin-top: 64px;
-    -moz-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.16);
 	z-index: 2;
 }
 
@@ -280,9 +321,9 @@ core-item{
 .cbp-spmenu-top.cbp-spmenu-open {
 	top: 0px;  
     margin-top: 64px;
-    -moz-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
+	box-shadow: 0 0px 1px 1px rgba(0, 0, 0, 0.16);
 	z-index: 2;
 }
  
